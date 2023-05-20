@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <link rel="stylesheet" type="text/css" href="BILINGUAL.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+  <div>
+    <img class="img-BILINGUAL" src="img/BILINGUALL.png" alt="BILINGUAL">
+  </div>
+  <div class="container">
+    <div class="form">
+      <label for="Source Language">Choose your Source Language:</label>
+      <select id="Choose your source language">
+        <option value="en">English</option>
+        <option value="sw">Swahili</option>
+       ]
+        <!-- Add more language options here -->
+      </select>
+      <label for="targetLanguage">Choose your Target Language:</label>
+      <select id="Choose your target language">
+        <option value="en">English</option>
+        <option value="sw">Swahili</option>
+      
+        <!-- Add more language options here -->
+      </select>
+      <br>
+      <table>
+      <tr>
+      <td>
+      <label for="sourceText"></label>
+      <textarea id="sourceText" rows="2" cols="80">Enter text here</textarea>
+      </td><td>
+     
+     <button onclick="translate()">TRANSLATE</button></td>
+    </tr>
+    </table>
+    </div>
+<script src="http//translate.google.com/translate_a/element.js?cbloadGoogleTranslate">
+    <div id="translationResult"
+    function loadGoogleTranslate(){
+      new google.translate.TranslateElement(
+        "google_element"
+      );
+    }>
+    </script></div>
+  
+  </nav>
+  </body>
+</html>
